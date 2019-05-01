@@ -13,5 +13,8 @@ use Exception;
  */
 class CseExceptions extends Exception
 {
-
+    /**
+     * @var array
+     */
+    private static $errorsMsg = [];
 }
