@@ -69,4 +69,34 @@ class TestException extends TestCase
             ],
         ];
     }
+
+    /**
+     * @param int $code
+     * @param string $expected
+     *
+     * @dataProvider providerGetErrorMsg
+     *
+     * @runInSeparateProcess
+     */
+    public function testGetErrorMsg(int $code, string $expected): void
+    {
+        $this->assertEquals($expected, ModelExceptions::getErrorMsg($code));
+    }
+
+    /**
+     * @return array
+     */
+    public function providerGetErrorMsg(): array
+    {
+        return [
+            [
+                ModelExceptions::ERROR_EXAMPLE_CODE_3,
+                'Error code 3'
+            ],
+            [
+                4,
+                'Unknown error'
+            ],
+        ];
+    }
 }
