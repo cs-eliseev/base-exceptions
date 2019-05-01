@@ -31,3 +31,23 @@ try {
 } catch (Throwable $e) {
     var_dump('Check instance: ' . $e->getMessage());
 }
+
+// Example: throw new exception
+// Error code 1
+try {
+    ModelExceptions::throwException(ModelExceptions::ERROR_EXAMPLE_CODE_1);
+} catch (CseExceptions $e) {
+    var_dump('Throw new exception: ' . $e->getMessage());
+}
+// Error code 2 - msg test
+try {
+    ModelExceptions::throwException(ModelExceptions::ERROR_EXAMPLE_CODE_2, ' - msg test');
+} catch (CseExceptions $e) {
+    var_dump('Throw new exception: ' . $e->getMessage());
+}
+// Unknown error
+try {
+    ModelExceptions::throwException(4);
+} catch (CseExceptions $e) {
+    var_dump('Throw new exception: ' . $e->getMessage());
+}
