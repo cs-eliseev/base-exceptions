@@ -13,6 +13,8 @@ use Exception;
  */
 class CseExceptions extends Exception
 {
+    protected const DEFAULT_ERROR_MSG = 'Unknown error';
+
     /**
      * @var array
      */
