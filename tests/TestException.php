@@ -35,4 +35,38 @@ class TestException extends TestCase
             [Throwable::class],
         ];
     }
+
+    /**
+     * @param int $code
+     * @param string|null $msg
+     *
+     * @throws CseExceptions
+     *
+     * @dataProvider providerThrowException
+     *
+     * @runInSeparateProcess
+     */
+    public function testThrowException(int $code, ?string $msg): void
+    {
+        $this->expectException(CseExceptions::class);
+
+        ModelExceptions::throwException($code, $msg);
+    }
+
+    /**
+     * @return array
+     */
+    public function providerThrowException(): array
+    {
+        return [
+            [
+                ModelExceptions::ERROR_EXAMPLE_CODE_1,
+                null
+            ],
+            [
+                ModelExceptions::ERROR_EXAMPLE_CODE_2,
+                ' - msg test'
+            ],
+        ];
+    }
 }
