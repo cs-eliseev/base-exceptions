@@ -67,6 +67,10 @@ class TestException extends TestCase
                 ModelExceptions::ERROR_EXAMPLE_CODE_2,
                 ' - msg test'
             ],
+            [
+                4,
+                null
+            ],
         ];
     }
 
