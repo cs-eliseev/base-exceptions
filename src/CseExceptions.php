@@ -29,6 +29,19 @@ class CseExceptions extends Exception
      */
     public static function getErrorMsg(int $code): ?string
     {
-        return static::$errorsMsg[$code] ?? self::DEFAULT_ERROR_MSG;
+        return static::$errorsMsg[$code] ?? static::DEFAULT_ERROR_MSG;
+    }
+
+    /**
+     * Throw new exception
+     *
+     * @param int $code
+     * @param string|null $msg
+     *
+     * @throws CseExceptions
+     */
+    public static function throwException(int $code, ?string $msg = ''): void
+    {
+        throw new static(static::getErrorMsg($code) . (empty($msg) ? '' : $msg), $code);
     }
 }
