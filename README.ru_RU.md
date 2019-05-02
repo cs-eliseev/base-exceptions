@@ -9,7 +9,7 @@ EXCEPTIONS CSE BASE
 
 [![Packagist](https://img.shields.io/packagist/v/cse/base-exceptions.svg?style=flat-square)](https://packagist.org/packages/cse/base-exceptions)
 [![Minimum PHP Version](https://img.shields.io/badge/php-%3E%3D%207.1-8892BF.svg?style=flat-square)](https://packagist.org/packages/cse/base-exceptions)
-[![Packagist](https://img.shields.io/packagist/l/cse/base-exceptions.svg?style=flat-square)](https://github.com/cs-eliseev/base-exceptions/blob/master/LICENSE.md)
+[![Packagist](https://img.shields.io/packagist/l/cse/base-exceptions.svg?style=popout-square)](https://github.com/cs-eliseev/base-exceptions/blob/master/LICENSE.md)
 [![GitHub repo size](https://img.shields.io/github/repo-size/cs-eliseev/base-exceptions.svg?style=flat-square)](https://github.com/cs-eliseev/base-exceptions/archive/master.zip)
 
 Данная библиотек обеспечивает простую работу с исключениями как для разработки так и для производства. 
