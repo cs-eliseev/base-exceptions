@@ -8,7 +8,7 @@ switch (true) {
         require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'autoload.php';
         break;
     default:
-        requireFiles( __DIR__ . DIRECTORY_SEPARATOR . 'src');
+        requireFiles(__DIR__ . DIRECTORY_SEPARATOR . 'src');
 
         break;
 }

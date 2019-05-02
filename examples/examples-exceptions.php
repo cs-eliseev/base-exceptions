@@ -4,7 +4,7 @@ require_once __DIR__ . '/../autoload.php';
 
 use cse\base\CseExceptions;
 
-require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'tests-data' . DIRECTORY_SEPARATOR .  'ModelExceptions.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'tests-data' . DIRECTORY_SEPARATOR . 'ModelExceptions.php';
 
 // Example: check instance
 $label = 'Check instance: ';
@@ -32,6 +32,7 @@ try {
 } catch (Throwable $e) {
     var_dump($label . $e->getMessage());
 }
+echo PHP_EOL;
 
 // Example: throw new exception
 $label = 'Throw new exception: ';
@@ -53,9 +54,12 @@ try {
 } catch (CseExceptions $e) {
     var_dump($label . $e->getMessage());
 }
+echo PHP_EOL;
 
 // Example: get error msg
 $label = 'Get error msg: ';
-// ModelExceptions
+// Error code 3
 var_dump($label . ModelExceptions::getErrorMsg(ModelExceptions::ERROR_EXAMPLE_CODE_3));
+// Unknown error
 var_dump($label . ModelExceptions::getErrorMsg(4));
+echo PHP_EOL;

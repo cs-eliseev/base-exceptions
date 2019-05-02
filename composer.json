@@ -1,6 +1,6 @@
 {
   "name": "cse/base-exceptions",
-  "description": "Provides simple work with exceptions for both development and production.",
+  "description": "This library provides a simple work with exceptions for both development and production.",
   "keywords": ["exception", "exceptions", "error", "errors", "cse", "collection", "collections", "tool", "tools", "utilities", "utils", "utility", "helper", "helpers", "library", "framework"],
   "homepage": "https://github.com/cs-eliseev/base-exceptions",
   "type": "library",
