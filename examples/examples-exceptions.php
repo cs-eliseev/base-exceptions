@@ -1,10 +1,9 @@
 <?php
 
 require_once __DIR__ . '/../autoload.php';
+require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'tests-data' . DIRECTORY_SEPARATOR . 'ModelExceptions.php';
 
 use cse\base\CseExceptions;
-
-require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'tests-data' . DIRECTORY_SEPARATOR . 'ModelExceptions.php';
 
 // Example: check instance
 $label = 'Check instance: ';
